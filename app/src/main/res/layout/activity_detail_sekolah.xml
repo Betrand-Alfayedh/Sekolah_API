@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailSekolahActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:id="@+id/imgDetail"
+            android:src="@drawable/logoo"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvNamaSekolahDetail"
+            android:text="Nama Sekolah"
+            android:textSize="25dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0751 - 8098418"
+            android:gravity="center"
+            android:id="@+id/tvNotlpDetail"
+            android:textSize="19dp"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAkreditasiDetail"
+                android:layout_marginTop="8dp"
+                android:layout_toStartOf="@id/tvAkreditasiHurufDetail"
+                android:text="Akreditasi :"
+                android:textStyle="bold"
+                android:textColor="#090909"
+                android:layout_marginEnd="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAkreditasiHurufDetail"
+                android:textSize="20dp"
+                android:text="A"
+                android:layout_alignParentEnd="true"
+                android:textColor="#E85322"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informasi Sekolah"
+            android:id="@+id/tvDetailIsi"
+            android:textAlignment="textStart"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

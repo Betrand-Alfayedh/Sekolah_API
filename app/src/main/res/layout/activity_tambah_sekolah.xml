@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TambahSekolahActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/corner_bottom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Sekolah"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textAlignment="center" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="#03A9F4"
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Nama Sekolah"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_edit_text"
+        android:hint="Example"
+        android:paddingLeft="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/etNamaSekolah"
+        android:drawableStart="@drawable/ic_sekolah"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Telpon"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_edit_text"
+        android:hint="Example"
+        android:paddingLeft="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/etNoTelpon"
+        android:drawableStart="@drawable/ic_telpon"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informasi"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/etInformasi"
+        android:hint="Informasi sekolah"
+        android:gravity="start"
+        android:background="@drawable/bg_edit_text"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gambar"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGambar"
+        android:text="Pilih Gambar"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgGambar"
+        android:src="@drawable/bg_images_item"
+        android:layout_gravity="center"
+        android:background="@color/black"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Akreditasi"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_edit_text"
+        android:hint="Example"
+        android:paddingLeft="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/etAkreditasi"
+        android:drawableStart="@drawable/ic_info"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah"
+        android:id="@+id/btnTambah"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="100dp"
+        android:backgroundTint="#03A9F4"
+        android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
